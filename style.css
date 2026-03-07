@@ -51,7 +51,7 @@ body {
     height: 180px; /* Высота как у прошлого плейсхолдера */
 }
 .infobox-main-img {
-    max-width: 120px; /* Оптимальный размер: не огромный, но и не маленький */
+    max-width: 290px; /* Оптимальный размер: не огромный, но и не маленький */
     height: auto;
 }
 .infobox-table { width: 100%; border-collapse: collapse; }
