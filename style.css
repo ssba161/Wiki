@@ -1,0 +1,102 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    color: #202122;
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* ШАПКА: Цвет #ebecf0 как в оригинале */
+.wiki-header {
+    height: 50px;
+    border-bottom: 1px solid #c8ccd1;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #ebecf0;
+}
+.header-content { display: flex; justify-content: space-between; width: 100%; align-items: center; }
+.wiki-logo-text { height: 18px; margin-left: 15px; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+
+.page-title { font-family: serif; font-size: 1.85rem; font-weight: 400; margin: 15px 0 5px 0; }
+.article-tabs { display: flex; border-bottom: 1px solid #a2a9b1; gap: 20px; margin-bottom: 12px; }
+.tab { padding: 10px 0; font-size: 0.9rem; cursor: pointer; color: #36c; }
+.tab.active { color: #202122; border-bottom: 3px solid #36c; font-weight: bold; }
+.talk-tab a { text-decoration: none; color: #a61717; }
+
+.article-tools { display: flex; justify-content: space-between; border-bottom: 1px solid #eaecf0; padding-bottom: 12px; margin-bottom: 20px; }
+.tool-right { display: flex; gap: 25px; }
+.tool-item { color: #54595d; font-size: 1.3rem; }
+
+/* ИНФОБОКС: Картинка по центру */
+.infobox {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    margin: 0 0 1em 1em;
+    padding: 0.2em;
+    float: right;
+    width: 270px;
+    font-size: 88%;
+}
+.infobox-header { text-align: center; font-weight: bold; padding: 0.2em; }
+.infobox-image-container { 
+    text-align: center; 
+    border: 1px solid #a2a9b1; 
+    margin: 5px; 
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* Высота как у прошлого плейсхолдера */
+}
+.infobox-main-img {
+    max-width: 120px; /* Оптимальный размер: не огромный, но и не маленький */
+    height: auto;
+}
+.infobox-table { width: 100%; border-collapse: collapse; }
+.infobox-table th, .infobox-table td { padding: 5px; border-top: 1px solid #a2a9b1; text-align: left; }
+
+.collapsible-section { border-top: 1px solid #eaecf0; }
+.section-trigger { display: flex; align-items: center; padding: 18px 0; cursor: pointer; font-size: 1.3rem; font-family: serif; }
+.arrow-icon { margin-right: 15px; font-size: 0.8rem; color: #72777d; }
+.section-body { display: none; padding-bottom: 20px; }
+
+/* НИЖНЯЯ ЧАСТЬ */
+.footer-bg-wrapper {
+    background-color: #ebecf0;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #c8ccd1;
+}
+.last-edited {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    color: #202122;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #c8ccd1;
+    margin-bottom: 20px;
+}
+.last-edited i:first-child { font-size: 1.2rem; margin-right: 12px; color: #54595d; }
+.last-edited span { flex-grow: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.wiki-footer { color: #202122; }
+.footer-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.footer-brand { font-family: serif; font-size: 1.6rem; }
+.footer-badges img {
+    height: 50px; 
+    margin-left: 15px;
+    border: 1px solid #a2a9b1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background: white;
+    padding: 2px;
+}
+.footer-legal { font-size: 0.85rem; margin-bottom: 15px; }
+.footer-links { font-size: 0.85rem; line-height: 2; color: #36c; }
+.footer-links a { text-decoration: none; color: inherit; }
+.desktop-link { font-weight: bold; }
+
+@media (max-width: 768px) {
+    .infobox { float: none; width: 100%; margin: 10px 0; }
+}
