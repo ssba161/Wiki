@@ -48,10 +48,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px; /* Высота как у прошлого плейсхолдера */
+    height: 260px; /* Высота как у прошлого плейсхолдера */
 }
 .infobox-main-img {
-    max-width: 290px; /* Оптимальный размер: не огромный, но и не маленький */
+    max-width: 350px; /* Оптимальный размер: не огромный, но и не маленький */
     height: auto;
 }
 .infobox-table { width: 100%; border-collapse: collapse; }
